@@ -1,0 +1,6 @@
+User-Agent: *
+Disallow: /payment
+Disallow: /calculator
+Disallow: /*.php$
+Disallow: /promo
+Disallow: /index-eng*

@@ -1,0 +1,629 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+a {
+    color: #3fa9f5;
+    font-weight: 400;
+}
+
+
+/*Pages
+......................................................................*/
+
+.page-1 {
+    position: relative;
+    font-weight: 300;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.page-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../img/main_background_v2.png);
+    background-clip: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.page-1-payment {
+	background-clip: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-color: #2591de;
+	font-weight: 300;
+	padding-bottom: 4%;
+	color: #ffffff;
+}
+
+.page-1-policy {
+	background-clip: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-color: #334159;
+	font-weight: 300;
+	padding-bottom: 4%;
+	color: #ffffff;
+}
+
+.page-1-anketa {
+	background-clip: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-color: #4a69ff73;
+	font-weight: 300;
+	padding-bottom: 4%;
+	color: #ffffff;
+}
+
+.page-1-termsofuse {
+	background-clip: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-color: #325ca7;
+	font-weight: 300;
+	padding-bottom: 4%;
+	color: #ffffff;
+}
+
+.page-1-personal {
+	background-clip: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-color: #e46274;
+	font-weight: 300;
+	/*padding-top: 50px;*/
+	padding-bottom: 4%;
+	color: #ffffff;
+}
+
+.page-white-text {
+	color: #ffffff;
+}
+
+.page-2 {
+	background-color: #4a8bff;
+	font-weight: 300;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	color: #ffffff;
+}
+
+.page-3 {
+	background-color: #ff6479;
+	font-weight: 300;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color: #ffffff;
+}
+
+.page-3-0 {
+	background-color: #5d66a0;
+	font-weight: 300;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color: #ffffff;
+}
+
+.page-3-1 {
+	background-color: #5d66a0;
+	font-weight: 300;
+	padding-top: 0px;
+	padding-bottom: 25px;
+	color: #ffffff;
+}
+
+.page-4 {
+	background-color: #f1f1f1;
+	font-weight: 300;
+	padding-top: 25px;
+	padding-bottom: 0px;
+	color: #1a1a1a;
+}
+
+.page-5 {
+    background-color: #f1dd66;
+    font-weight: 300;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.page-6 {
+	background-color: #f5f5f5;
+	font-weight: 300;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.page-7 {
+	background-color: #4a69ff73;
+	font-weight: 300;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.page-8 {
+	background-color: #ffffff;
+	font-weight: 300;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.page-9 {
+	background-color: #222;
+	font-weight: 300;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.page-9-payment {
+	background-color: #ffffff;
+	font-weight: 300;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+/*....................................................................*/
+.anketa {
+	height: 80vh;
+    border: 2px solid #fff!important;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.page-9 a {
+    color: #c4c4c4;
+}
+
+.main-tit {
+	text-align: center;
+	color: #ff6479;
+	font-weight: 500;
+	padding-top: 15%;
+	padding-bottom: 30px;
+}
+
+.payment-tit {
+	text-align: center;
+	color: #ffffff;
+	font-weight: 500;
+	padding-top: 10px;
+	padding-bottom: 0px;
+}
+
+.main-subtit {
+	text-align: center;
+	color: #1a1a1a;
+}
+
+.disk {
+	text-align: center;
+	color: #a0a0a0;
+}
+
+.linkcolor {
+	color: #fff900;
+}
+
+.social_desktop{
+  	float: right;
+}
+
+.logo_desktop a {
+	float: left;
+	padding-right: 5px;
+/*	padding-top: 50px;*/
+}
+
+.logo_desktop {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-bottom: 25px;
+    height: 53px;
+    padding-top: 50px;
+}
+
+.social-logo {
+	width: 80px;
+	border: 1px solid #ccc!important;
+    border-radius: 120px;
+}
+
+.social-logo-white:hover {
+	background-color: white;
+}
+
+.social-logo-dark:hover {
+	background-color: #e91e63;
+}
+
+.social_desktop a {
+	float: left;
+}
+
+.logo-size {
+	width: 53px;
+}
+
+.logo-text {
+    padding-top: 15px;
+	color: #3fa9f5;
+	font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-p {
+	padding-left: 5px;
+	/*margin-top: revert;*/
+}
+
+.logo-p-white {
+	color: #ffffff;
+	padding-left: 5px;
+}
+
+.logotype-size {
+	max-height: 80px;
+	margin-left: 20%;
+    max-width: 80px;
+    min-width: 50px;
+}
+
+.logotype-size-bot {
+	max-width: 50px;
+/*	margin-left: 18%;*/
+}
+
+.telegram-size {
+	width: 80px;
+    margin-left: 0%;
+    float: right;
+    margin-right: 4%;
+	margin-top: 15px;
+}
+
+.logotype-block {
+	width: 80px;
+}
+
+.logotype-text-block {
+	width: auto;
+	margin-left: 30px;
+}
+
+.logotype-text-block-payment {
+	margin-left: 4%;
+}
+
+.logotype-text {
+	margin-top: revert;
+    margin-left: revert;
+    padding-top: 15px;
+	color: #3fa9f5;
+	font-weight: 500;
+}
+
+.logotype-text-bot {
+    padding-top: 0px;
+	color: #3fa9f5;
+	font-weight: 500;
+	margin-bottom: 0;
+	padding-top: 10px;
+}
+
+.logotype-text-payment {
+	margin-top: revert;
+    margin-left: revert;
+    padding-top: 15px;
+    padding-left: 7%;
+	color: #3fa9f5;
+	font-weight: 500;
+}
+
+.link-dec {
+	text-decoration: none;
+}
+
+.lang_active {
+	font-weight: 500;
+}
+
+.lang_active_on_color {
+	font-weight: 500;
+	color: #ffffff;
+}
+
+.lang_none {
+	color: #8e8e8e;
+    font-weight: 300;
+    text-decoration: none;
+    pointer-events: none;
+    cursor: default;
+}
+
+.lang_none_on_color {
+	color: #d6d6d6;
+    font-weight: 300;
+    text-decoration: none;
+    pointer-events: none;
+    cursor: default;
+}
+
+.item-right {
+	align-items: center;
+    justify-content: right;
+    display: flex;
+    padding-right: 6rem;
+}
+
+.logotype-text-white {
+	margin-top: revert;
+    margin-left: revert;
+    padding-top: 15px;
+	color: #ffffff;
+	font-weight: 500;
+}
+
+.number-text {
+	padding-top: 0.8em;
+}
+
+.number-text-block {
+	width: 80%;
+}
+
+.number-block {
+	width: 10%;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.middle-w-text {
+	font-weight: 450;
+}
+
+.tit {
+	text-align: center;
+	color: #333333;
+}
+
+.img-01 {
+	max-height: 100px;
+	width: auto;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.main-button {
+    margin-top: 6%;
+}
+
+.sup-button {
+	margin-top: 1%;
+	margin-bottom: 4%;
+}
+
+#upbut {
+	color: #333;
+    background-color: #fbfbfb;
+    border-color: #fbfbfb;
+}
+
+#upbut:hover {
+  	color: #FFF;
+  	background-color: #3fa9f5;
+  	border-color: #3fa9f5;
+}
+
+.logotype-block-bot {
+	padding-left: 4%;
+}
+
+
+.page-link {
+	text-align: center;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+.contacts {
+	color: white;
+	padding-bottom: 20px;
+}
+
+
+/*MOBILE
+...............................................................*/
+@media (min-width: 550px) {
+	.img-01 {max-width: 70%;}
+	.job_logo {max-width: 70%;}
+	.job_logo_sm {max-width: 35%;}
+	.tit {padding-top: 0px; padding-bottom: 0px;}
+	.mini-tit {padding-top: 0px;}
+	.wrapper {display: table;}
+	.content-left {display: table-footer-group; text-align: left; padding-left: 0;}
+	.content-right {padding-right: 0;}
+	.one.col.logotype-block {width: 80px; margin-left: 4%}
+	.eleven.col.logotype-text-block {width: auto; margin-left: 1%;}
+	.foot.six.col {width: auto;}
+	.logotype-text-block {width: auto;}
+	.one.col.telegram-size {width: 80px;}
+	.ten.col.logotype-text-block {width: auto;}
+	.two.col.point-block {width: 40px;}
+	.minhr {display: none;}
+}
+
+@media (max-width: 550px) {
+	.img-01 {max-width: 70%}
+	.main-button {margin-top: 6%;}
+	.foot.six.col {width: auto;}
+	.logotype-block-bot {text-align: center;}
+	.contacts {text-align: center; padding-top: 10px;}
+	.logotype-size-bot {margin-left: 0%;}
+	.maxhr {display: none;}
+	.logotype-block-bot {padding-left: 0%;}
+	.logo_desktop {padding-left: 2rem; padding-right: 2rem;}
+}
+
+
+/*POPUP SCRIPST*/
+#overlay {
+    display: block;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #6b6b6b8c;
+    color: white;
+    z-index: 1001;
+    font-size: x-large;
+    -moz-opacity: 0.7;
+    padding-top: 100px;
+}
+
+#overlay-text {
+	opacity: 100%;
+	font-size: 2.5rem;
+}
+
+#ofAge {
+	color: white;
+    font-size: 2rem;
+    width: 15rem;
+    opacity: 100%;
+}
+
+.agebutton {
+	background-color: #4a8bff !important;
+}
+
+.agebutton:hover {
+	background-color: #ff6479 !important;
+}
+
+/*PAYMENT CALCULATOR*/
+.row4 {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc!important;
+    border-radius: 3px;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+}
+
+.input-num {
+	width: -webkit-fill-available;
+}
+
+.point-block {
+	width: 40px;
+}
+
+.point-text-block {
+	width: auto;
+	float: initial;
+	display: grid;	
+} 
+
+.point-check {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.point-check-sup {
+	width: 25px;
+    height: 25px;
+}
+
+.calculator {
+	padding-top: 30px;
+}
+
+.calculator p {
+	font-weight: 300;
+}
+
+.calculator b {
+	font-weight: 450;
+}
+
+.calculator label {
+	font-weight: 450;
+}
+
+.minstyle {
+	padding-bottom: 20px;
+}
+
+.btn_estimate_div {
+	width: auto;
+	margin-bottom: 40px;
+	margin-left: 2%;
+	display: inline;
+}
+
+.btn_estimate_block {
+	width: -webkit-fill-available;
+	margin-bottom: 20px;
+	text-align: center;
+	color: black;
+	font-weight: 600;
+}
+
+#btn_estimate {
+	background-color: #1a1a1a;
+	color: white;
+}
+
+#btn_estimate:hover {
+    border-color: #2591de;
+    background-color: #2591de;
+}
+
+.h3num {
+	font-size: 3.0rem;
+ 	line-height: 1.3;  
+ 	letter-spacing: -.1rem;
+  	margin-top: 0;
+ 	margin-bottom: 2rem;
+ 	font-weight: 300;
+ }
+
+ @media (min-width: 550px) {
+  .h3num {font-size: 3.6rem;}
+}
+
+.method label {
+	font-weight: 300;
+}
+
+.page-9 .link-dec {
+	text-align: center;
+}
