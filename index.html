@@ -368,25 +368,43 @@
 				</p>
 			</div>
 
+
 			<div class="container">
-
-				<form method="post" action="https://getform.io/f/6827717d-2c46-4fba-aa37-8665b056cf0e">
-
-					<div class="row">
-						<div class="twelve col">
-							<label for="exampleEmailInput">Ваш email</label>
-							<input class="utilite-full" type="email" placeholder="name@gmail.com" id="exampleEmailInput" name="email">
-						</div>
-					</div>
-					<label for="exampleMessage">Сообщение</label>
-					<textarea class="utilite-full" name="message" placeholder="Введите сообщение..." id="exampleMessage"></textarea>
-					<input type="hidden" id="captchaResponse" name="g-recaptcha-response">
-					<input class="button-primary" type="submit" value="Отправить">
-
-				</form>
-
+			
+			    <form id="contact" style="max-width:520px">
+			        <div class="row">
+			            <div class="twelve col">
+			                <label for="exampleEmailInput">Ваш email</label>
+			                <input class="utilite-full" type="email" placeholder="name@gmail.com" id="exampleEmailInput" name="email">
+			            </div>
+			        </div>
+			        <label for="exampleMessage">Сообщение</label>
+			        <textarea class="utilite-full" name="message" placeholder="Введите сообщение..." id="exampleMessage"></textarea>
+			        <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
+			        <input class="button-primary" type="submit" value="Отправить">
+			
+			    </form>
+			    <script>
+			        document.getElementById('contact').addEventListener('submit', async (e) => {
+			          e.preventDefault();
+			          const form = e.target;
+			          const data = Object.fromEntries(new FormData(form));
+			          const status = document.getElementById('status');
+			          status.textContent = 'Отправка...';
+			          try {
+			            const res = await fetch('/api/contact', {
+			              method: 'POST',
+			              headers: {'Content-Type':'application/json'},
+			              body: JSON.stringify(data)
+			            });
+			            status.textContent = res.ok ? 'Спасибо! Сообщение было успешно отправлено на zoomwedding.ru@gmail.com!' : 'Произошла ошибка при отправке, напишите нам на почту zoomwedding.ru@gmail.com';
+			            if (res.ok) form.reset();
+			          } catch { status.textContent = 'Произошла ошибка при отправке, напишите нам на почту zoomwedding.ru@gmail.com'; }
+			        });
+			        </script>
 			</div>
-
+						
+			
 			<div style="padding-top: 30px;" class="row">
 				<p>
 					Если у вас остались вопросы, смело пишите нам на электронную почту <a href="mailto:zoomwedding.ru@gmail.com" target="_blank">zoomwedding.ru@gmail.com</a> или в <a href="https://t.me/zoomwedding_info" target="_blank">telegram</a>.<br>
