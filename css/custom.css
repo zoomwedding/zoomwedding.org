@@ -5,7 +5,7 @@ html, body {
 }
 
 a {
-    color: #3fa9f5;
+    color: #ff6479;
     font-weight: 400;
 }
 
@@ -28,7 +28,7 @@ a {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url(../img/main_background_v6.png);
+    background-image: url(../img/main_background_v7.jpg);
     background-clip: border-box;
     background-position: center;
     background-repeat: no-repeat;
