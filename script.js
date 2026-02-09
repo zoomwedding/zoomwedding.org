@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
  	document.getElementById('cart_custom').addEventListener('submit', estimateTotal);
 
-	var v_btn_estimate = document.getElementById('btn_estimate');
-
 });
 
 function estimateTotal(event) {
@@ -36,7 +34,7 @@ function estimateTotal(event) {
 
 	switch(shipping){
 		case 'fedex':
-			shippingCostPer = 110 + 15;	
+			var shippingCostPer = 110 + 15;
 			break;
 		case 'fedex2':
 			shippingCostPer = 220 + 30;	
@@ -50,7 +48,7 @@ function estimateTotal(event) {
 
 	switch(support){
 		case 'supmin':
-			supportCostPer = 2.4;
+			var supportCostPer = 2.4;
 			supportFixAd = 0;
 			break;
 		case 'supmax':
@@ -65,9 +63,6 @@ function estimateTotal(event) {
 	var totalShippingCost = shippingCostPer;
 	
 	var estimaterub = '$' + ((totalItemPrice + totalShippingCost) * supportCostPer + supportFixAd).toFixed(0);
-	
-	if (shipping == 0) {
-		document.getElementById('total_estimate').value= 'введите больше информации';
-	}
-		document.getElementById('total_estimate').value=estimaterub;
+
+	document.getElementById('total_estimate').value=estimaterub;
 };
