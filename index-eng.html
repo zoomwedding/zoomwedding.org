@@ -54,6 +54,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<link rel="stylesheet" href="css/normalize.css">
 		<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
 		<script src="https://www.google.com/recaptcha/api.js?render=6LfVWiweAAAAAPQCvr97ECnuGwzEMWbrpNBR3w2m"></script>
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18133982553/hDITCP-hlqYcENm6-sZD',
+      'value': 1.0,
+      'currency': 'USD',
+      'transaction_id': '',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 </head>
 
 <body>
@@ -419,7 +436,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 <label for="exampleMessage">Message</label>
                 <textarea class="utilite-full" name="message" placeholder="Enter your message..." id="exampleMessage" required></textarea>
-                <input class="button-primary" type="submit" value="Send">
+                <input class="button-primary" type="submit" value="Send" onclick="return gtag_report_conversion();">
 
             </form>
 
